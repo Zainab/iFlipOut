@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/default_bg_color">
+    <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" >
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/s"
+android:background="@color/default_bg_color" 
+android:layout_gravity="left"/>
+     New Layout 
+    <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:gravity="right" >
+    <ImageView
+     android:id="@+id/search"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/search" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:id="@+id/maintable" android:background="@drawable/bg">
+		
+			
+		
+</LinearLayout>

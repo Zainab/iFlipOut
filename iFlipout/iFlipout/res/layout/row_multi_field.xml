@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="?android:attr/listPreferredItemHeight"
+android:paddingRight="6dip">
+  <ImageView android:id="@+id/image_cover"
+    android:layout_width="48dip" android:layout_height="48dip"
+    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+    android:layout_centerVertical="true" android:maxHeight="48dip"
+    android:maxWidth="48dip" android:scaleType="fitXY" android:src="@+drawable/wsj"
+    />
+
+	<TextView android:id="@+id/documentTitle" android:layout_width="0dip"
+		android:layout_height="wrap_content" android:layout_alignParentRight="true"
+		android:layout_alignWithParentIfMissing="true" android:ellipsize="marquee"
+		android:paddingLeft="5dip"
+		android:layout_toRightOf="@id/image_cover" android:singleLine="false"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Title" />
+
+	<TextView android:id="@+id/documentDescription"
+
+		android:layout_width="0dip" android:layout_height="wrap_content"
+		android:layout_below="@id/documentTitle" android:layout_alignLeft="@id/documentTitle"
+		android:layout_alignParentRight="true" android:ellipsize="marquee"
+		android:paddingLeft="5dip"
+		android:typeface="sans"
+		android:singleLine="false" android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>
+
+

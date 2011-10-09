@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+			android:text="WSJ" android:paddingTop="20dip"
+			android:paddingBottom="10dip" />
+		<LinearLayout android:layout_width="fill_parent" android:layout_weight="2"
+			android:paddingTop="50dip" android:paddingBottom="50dip"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_weight="1.0" android:layout_height="wrap_content"
+				android:orientation="vertical" android:paddingLeft="15dip">
+				<ImageView android:src="@drawable/wsj" android:id="@+id/wsj_image_view"
+					android:layout_width="50px" android:layout_height="50px" />
+				<TextView android:id="@+id/explore" android:layout_width="wrap_content"
+					android:textSize="15sp" android:layout_marginTop="5dip"
+					android:textStyle="normal" android:text="WSJ" android:textColor="@color/default_text_color"
+					android:layout_height="fill_parent" />
+			</LinearLayout>
+		</LinearLayout>
+		<include layout="@layout/colorstrip" />
+		<RelativeLayout android:id="@+id/base_layout"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_gravity="bottom" android:layout_alignParentBottom="true">
+			<LinearLayout style="@style/TitleBar">
+				<ImageView style="@style/TitleBarSeparator" />
+				<ImageView style="@style/TitleBarSeparator" />
+				<Button android:id="@+id/news" android:text="News"
+					style="@style/TitleBarAction" android:drawableTop="@drawable/newsfeed"
+					android:textSize="8sp" android:textStyle="bold" />
+				<ImageView style="@style/TitleBarSeparator" />
+				<Button android:id="@+id/faceBook" android:text="Face Book"
+					style="@style/TitleBarAction" android:drawableTop="@drawable/facebook"
+					android:textSize="8sp" android:textStyle="bold" />
+				<ImageView style="@style/TitleBarSeparator" />
+				<Button android:id="@+id/youtube" android:text="You tube"
+					android:textSize="8sp" android:textStyle="bold" style="@style/TitleBarAction"
+					android:drawableTop="@drawable/youtube1" />
+				<ImageView style="@style/TitleBarSeparator" />
+			</LinearLayout>
+		</RelativeLayout>
+		<include layout="@layout/colorstrip" />
+	</LinearLayout>
+</ScrollView>
