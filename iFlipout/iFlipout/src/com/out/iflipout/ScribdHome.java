@@ -44,7 +44,7 @@ public class ScribdHome extends Activity implements OnClickListener {
 			classToLaunch = ChannelList.class;
 		} else if (view == faceBook) {
 			classToLaunch = Main.class;
-		}  else {
+		}  else if(view == youtube) {
 			classToLaunch = YoutubeList.class;
 		}
 

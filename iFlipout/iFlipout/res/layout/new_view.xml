@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:orientation="vertical" android:paddingLeft="10dip"
-	android:paddingRight="5dip">
-	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
+<ScrollView android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/bk_gnd">
+		<include layout="@layout/colorstrip" />
+		<ImageView android:id="@+id/image_blurline"
+			android:layout_width="wrap_content" android:layout_height="2sp" />
 		<LinearLayout android:id="@+id/sign_in_layout"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
 			android:orientation="vertical" android:paddingLeft="10dip"
@@ -33,17 +36,18 @@
 				android:layout_height="wrap_content" android:hint="@string/password_hint"
 				android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
 				android:layout_marginTop="5dip" android:background="@android:drawable/editbox_background"
-				android:password="true" android:text="password" />
+				android:password="true"/>
 			<LinearLayout android:layout_width="fill_parent"
 				android:layout_height="wrap_content" android:orientation="horizontal"
 				android:paddingTop="15dip" android:paddingLeft="10dip"
 				android:paddingRight="10dip">
-				<Button android:id="@+id/signin" android:layout_width="wrap_content"
-					android:layout_height="40dip" android:text="Sign In"
-					android:layout_gravity="right" android:layout_alignParentRight="true"
-					android:layout_marginTop="15dip" android:hapticFeedbackEnabled="true" />
-
+				<Button android:id="@+id/signin" android:text="Sign In"
+					android:textSize="@dimen/menu_buttons_text_size" android:textColor="@color/menu_buttons"
+					android:textStyle="bold" android:gravity="center"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginLeft="15px" android:layout_marginRight="15px"
+					android:layout_marginTop="0px" android:background="@drawable/button_menu" />
 			</LinearLayout>
 		</LinearLayout>
-	</ScrollView>
-</LinearLayout>
+	</LinearLayout>
+</ScrollView>
