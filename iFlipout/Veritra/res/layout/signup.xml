@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:paddingLeft="10dip"
+	android:paddingRight="10dip">
+	<ImageView android:id="@+id/image" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="80dip"
+		android:src="@drawable/scribd" android:paddingTop="20dip"
+		android:paddingBottom="10dip" />
+
+	<TextView android:id="@+id/sign_up_text" android:text="Sign Up"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingTop="20dip" android:textColor="@color/default_text_color"
+		android:textSize="16sp" android:layout_below="@+id/textView" />
+	
+	<TextView android:id="@+id/email_text" android:text="Email Address(required)"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/sign_up_text" android:paddingTop="10dip"
+		android:textColor="@color/default_text_color" android:textSize="12sp" />
+	
+	<EditText android:id="@+id/emailText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Email Address:"
+		android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+		android:layout_marginTop="5dip" android:layout_below="@+id/email_text"
+		android:text="rofousmobile+t1@gmail.com"
+		android:background="@android:drawable/editbox_background" />
+	
+	<TextView android:id="@+id/emailStatus" android:textSize="12sp"
+		android:visibility="gone" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@+id/emailText"
+		android:textColor="@color/default_text_color" />
+	<TextView android:id="@+id/create_username" android:text="Create Username:"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/emailStatus" android:paddingTop="20dip"
+		android:textColor="@color/default_text_color" android:textSize="12sp" />
+	
+	<EditText android:id="@+id/usernameText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Username"
+		android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+		android:layout_marginTop="5dip" android:background="@android:drawable/editbox_background"
+		android:layout_below="@+id/create_username" android:text="rmtest1" />
+	
+	<TextView android:id="@+id/usernameStatus" android:textSize="12sp"
+	    android:visibility="gone"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/usernameText" android:textColor="@color/default_text_color" />
+	
+	<TextView android:id="@+id/create_password" android:text="Password:"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/usernameStatus" android:paddingTop="20dip"
+		android:textColor="@color/default_text_color" android:textSize="12sp" />
+	
+	<EditText android:id="@+id/passwordText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Password"
+		android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+		android:layout_marginTop="5dip" android:layout_below="@+id/create_password"
+		android:background="@android:drawable/editbox_background"
+		android:text="password"
+		android:password="true" />
+		
+	<TextView android:id="@+id/confirm_password" android:text="Confirm Password:"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:layout_below="@+id/usernameStatus" android:paddingTop="20dip"
+  android:textColor="@color/default_text_color" android:textSize="12sp" />
+ 
+ <EditText android:id="@+id/confirmPasswordText" android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:hint="Confirm Password"
+  android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+  android:layout_marginTop="5dip" android:layout_below="@+id/confirm_password"
+  android:background="@android:drawable/editbox_background"
+  android:password="true"  android:text="password"/>
+	
+	<TextView android:id="@+id/passwordStatus" android:textSize="12sp"
+		android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/passwordText" android:paddingBottom="10dip"
+		android:textColor="@color/default_text_color" />
+	<Button android:id="@+id/sign_up" android:layout_width="wrap_content"
+		android:layout_height="40dip" android:text="Continue"
+		android:layout_weight="1" android:layout_gravity="right"
+		android:paddingLeft="20dip" android:paddingRight="20dip"
+		android:hapticFeedbackEnabled="true" android:layout_marginTop="15dip"
+		android:layout_below="@+id/passwordStatus" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HelloScribd!</string>
+    <string name="app_name">iFlipOut</string>
+    <string name="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget felis et magna euismod 
+    accumsan. Maecenas elementum lobortis bibendum. Fusce lobortis mauris tristique lectus porta mollis. 
+    Suspendisse metus quam, elementum id mollis sit amet, lacinia et nulla. Mauris pellentesque est auctor massa 
+    volutpat sit amet euismod justo accumsan. Vivamus vitae mi pellentesque dolor varius vestibulum eget sed mi. 
+    Sed varius consequat leo, in vehicula nibh aliquam eget. Cras lectus elit, venenatis id consequat sit amet, 
+    semper ac leo. Vestibulum et scelerisque urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Ut auctor venenatis ante, nec fermentum neque consequat eu.</string>
+<string name="username">Username:</string>
+<string name="password">Password:</string>
+<string name="remember">Remember me</string>
+<string name="search_label">Search Scribd</string>
+<string name="search_hint">Art</string>
+<string name="password_hint">Password</string>
+<string name="HOST">http://api.scribd.com/</string>
+<string name="REQUEST_PATH">api?method=</string>
+<string name="API_KEY">797bj9jf8g1vsplxhmfqg</string>
+</resources>
+

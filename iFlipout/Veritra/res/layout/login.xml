@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:paddingLeft="10dip"
+		android:paddingRight="5dip">
+		<include layout="@layout/colorstrip" />
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="65dip">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="55dip" android:layout_gravity="center"
+				android:src="@drawable/logo" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/sign_in_layout"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical" android:paddingLeft="10dip"
+			android:paddingRight="10dip">
+			<TextView android:id="@+id/signin_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_centerInParent="true" android:textColor="@color/default_text_color"
+				android:paddingLeft="2dip" android:textSize="16sp"
+				android:paddingTop="10dip" android:paddingBottom="10dip"
+				android:text="Please sign-in to access your channels:" />
+			<TextView android:id="@+id/username_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_centerInParent="true" android:textColor="@color/default_text_color"
+				android:paddingLeft="2dip" android:text="@string/username" />
+			<EditText android:id="@+id/username" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:hint="Username"
+				android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+				android:layout_marginTop="5dip" android:background="@android:drawable/editbox_background"
+				android:text="" />
+			<TextView android:id="@+id/password_text"
+				android:layout_width="fill_parent" android:layout_marginTop="5dip"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:textColor="@color/default_text_color" android:paddingLeft="2dip"
+				android:text="@string/password" />
+			<EditText android:id="@+id/password" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:hint="@string/password_hint"
+				android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+				android:layout_marginTop="5dip" android:background="@android:drawable/editbox_background"
+				android:password="true" android:text="password" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:paddingTop="15dip" android:paddingLeft="10dip"
+				android:paddingRight="10dip">
+				<Button android:id="@+id/signin" android:layout_width="wrap_content"
+					android:layout_height="40dip" android:text="Sign In"
+					android:layout_gravity="right" android:layout_alignParentRight="true"
+					android:layout_marginTop="15dip" android:hapticFeedbackEnabled="true" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

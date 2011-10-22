@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:scrollbars="none">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:background="@color/default_bg_color">
+		<ImageView android:id="@+id/scribdLogo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" android:src="@drawable/scribd"
+			android:paddingTop="20dip" android:paddingBottom="10dip" />
+		<TextView android:id="@+id/introduction"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingLeft="10dip" android:paddingRight="10dip"
+			android:layout_centerInParent="true" android:text="@string/intro_text" />
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingTop="15dip" android:paddingLeft="10dip"
+			android:paddingRight="10dip">
+			 <Button android:id="@+id/signin" android:layout_width="wrap_content"
+      android:layout_height="40dip" android:text="Sign In"
+      android:layout_weight="1"
+      android:hapticFeedbackEnabled="true" />
+			<Button android:id="@+id/signup" android:layout_width="wrap_content"
+				android:layout_height="40dip" android:text="Sign Up"
+				android:layout_weight="1" />
+		</LinearLayout>
+		<TextView android:id="@+id/skip" android:layout_width="wrap_content"
+        android:layout_height="40dip" android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:textSize="14sp"
+        android:text="Not right now >>" android:paddingTop="10dip"
+        android:layout_weight="1" />
+	</LinearLayout>
+</ScrollView>

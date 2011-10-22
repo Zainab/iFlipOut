@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:paddingLeft="10dip"
+		android:paddingRight="10dip">
+		<TextView android:id="@+id/documentText"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Document ID" android:paddingLeft="2dip"
+			android:textSize="16sp" android:paddingTop="10dip"
+			android:textColor="@color/default_text_color" />
+		<TextView android:id="@+id/doc_id" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textColor="@color/default_text_color"
+			android:paddingLeft="2dip" android:textSize="14sp"
+			android:paddingTop="5dip" android:hint="doc_id of the specified document." />
+		<TextView android:id="@+id/isbnText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:textColor="@color/default_text_color" android:paddingTop="10dip"
+			android:paddingLeft="2dip" android:text="ISBN" />
+		<EditText android:id="@+id/isbn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="ISBN of the specified document, if available. "
+			android:paddingTop="5dip" android:textSize="14sp"
+			android:paddingLeft="2dip" android:imeOptions="actionNext|flagNoEnterAction"
+			android:background="@android:drawable/editbox_background" />
+
+		<TextView android:id="@+id/titleText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:textColor="@color/default_text_color" android:paddingTop="10dip"
+			android:paddingLeft="2dip" android:text="Title" />
+		<EditText android:id="@+id/title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Title"
+			android:paddingTop="5dip" android:textSize="14sp"
+			android:imeOptions="actionNext|flagNoEnterAction" android:background="@android:drawable/editbox_background" />
+		<TextView android:id="@+id/descriptionText"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="16sp" android:textColor="@color/default_text_color"
+			android:paddingTop="10dip" android:paddingLeft="2dip" android:text="Description" />
+		<EditText android:id="@+id/description" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Description"
+			android:paddingTop="5dip" android:textSize="14sp"
+			android:imeOptions="actionNext|flagNoEnterAction" android:background="@android:drawable/editbox_background" />
+		<TextView android:id="@+id/accessText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:paddingLeft="2dip" android:textColor="@color/default_text_color"
+			android:paddingTop="10dip" android:text="Access: unchecked- private, checked- public" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TextView android:id="@+id/checkboxText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="14sp" android:textColor="@color/default_text_color"
+				android:text="Private" android:paddingLeft="2dip" />
+			<CheckBox android:id="@+id/access" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="5dip"
+				android:checked="false" android:paddingRight="2dip"
+				android:layout_marginLeft="180dip" />
+		</LinearLayout>
+		<TextView android:id="@+id/authorText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:textColor="@color/default_text_color" android:paddingLeft="2dip"
+			android:text="Author" />
+		<EditText android:id="@+id/author" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="author"
+			android:paddingTop="5dip" android:textSize="14sp"
+			android:paddingLeft="2dip" android:imeOptions="actionNext|flagNoEnterAction"
+			android:background="@android:drawable/editbox_background" />
+	</LinearLayout>
+	</ScrollView>
