@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onClick(View view) {
 		Intent intent = null;
 		Class<?> classToLaunch = null;
-		classToLaunch = ScribdHome.class;
+		classToLaunch = ChannelHome.class;
 		intent = new Intent(this.getBaseContext(), classToLaunch);
 		startActivity(intent);
 

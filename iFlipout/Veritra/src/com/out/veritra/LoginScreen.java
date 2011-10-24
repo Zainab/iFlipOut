@@ -30,7 +30,7 @@ public class LoginScreen extends Activity  {
 
 			public void onClick(View v) {
 				if(!username.getText().toString().equalsIgnoreCase("") & !password.getText().toString().equalsIgnoreCase("")){
-					Intent intent = new Intent(v.getContext(), MainActivity.class);
+					Intent intent = new Intent(v.getContext(), ChannelHome.class);
 					startActivity(intent);
 					return;
 				}

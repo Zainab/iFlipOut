@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +25,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.keyes.youtube.OpenYouTubePlayerActivity;
 import com.out.veritra.adapters.ChannelAdapter;
 import com.out.veritra.adapters.YoutubeAdapter;
 import com.out.veritra.models.Channel;
@@ -69,7 +72,12 @@ OnItemClickListener, OnChannelDownload, ListView.OnScrollListener  {
 	}
 
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		Toast.makeText(this, "Yet to be implemented", Toast.LENGTH_LONG).show();
+//		Toast.makeText(this, "Yet to be implemented", Toast.LENGTH_LONG).show();
+		String dummyURL = "http://www.youtube.com/watch?v=KUeM808HTuk&feature=related";
+		Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(dummyURL));
+		startActivity(myIntent);
+//		Intent lVideoIntent = new Intent(null, Uri.parse(dummyURL, view.getContext(), OpenYouTubePlayerActivity.class));
+//		startActivity(lVideoIntent);
 //		Youtube document = documents.get(position);
 //		Intent intent = new Intent(Intent.ACTION_VIEW);
 //		intent.setAction("android.intent.action.VIEW"); 

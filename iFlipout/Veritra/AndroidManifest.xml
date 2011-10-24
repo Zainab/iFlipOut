@@ -27,7 +27,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name="com.out.veritra.ScribdHome"
+		<activity android:name=".ChannelHome"
 			android:screenOrientation="portrait">
 			<meta-data android:name="android.app.default_searchable"
 				android:value=".ScribdSearch" />
@@ -45,7 +45,10 @@
 			android:screenOrientation="portrait">
 			<intent-filter> <action android:name="android.intent.action.VIEW" /></intent-filter>
 		</activity>
-		
+		<activity android:name="AddNewChannel"
+			android:screenOrientation="portrait">
+			<intent-filter> <action android:name="android.intent.action.VIEW" /></intent-filter>
+		</activity>
 		
 		<activity android:name="com.out.veritra.Main"
 			android:screenOrientation="portrait">

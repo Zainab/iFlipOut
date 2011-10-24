@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout  android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/bk_gnd">
+  <include layout="@layout/colorstrip" />
+  <TableLayout android:id="@+id/tableLayout" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" 
+    android:paddingRight="10dip">
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+      <TextView android:id="@+id/header" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="Add New Channel content"
+        android:textSize="18sp" android:textStyle="bold" android:paddingTop="10dip"
+        android:gravity="center" android:layout_weight="1">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Channel Name:"
+        android:paddingRight="5dip" android:paddingTop="10dip"
+        android:paddingBottom="2dip" android:paddingLeft="5dip"
+        android:textStyle="bold" android:layout_weight="1">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/channelName" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:hint="Channel Name"
+        android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+        android:inputType="textCapWords" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip"
+        android:background="@android:drawable/editbox_background">
+      </EditText>
+    </TableRow>
+    <TableRow>
+      <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="News Item Category:"
+        android:paddingRight="5dip" android:paddingTop="10dip"
+        android:paddingBottom="2dip" android:paddingLeft="5dip"
+        android:textStyle="bold">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/newsItemCategory" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:hint="News Item Category"
+        android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+        android:inputType="textCapWords" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip"
+        android:background="@android:drawable/editbox_background">
+      </EditText>
+    </TableRow>
+    <TableRow>
+      <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="News Content:"
+        android:paddingRight="5dip" android:paddingTop="10dip"
+        android:paddingBottom="2dip" android:paddingLeft="5dip"
+        android:textStyle="bold">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/newsContent" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:hint="News Item Category"
+        android:textSize="14sp" android:imeOptions="actionNext|flagNoEnterAction"
+        android:inputType="textCapWords" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip"
+        android:background="@android:drawable/editbox_background">
+      </EditText>
+    </TableRow>
+       <TableRow>
+      <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="URL :"
+        android:paddingRight="5dip" android:paddingTop="10dip"
+        android:paddingBottom="2dip" android:paddingLeft="5dip"
+        android:textStyle="bold">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/url" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:hint="Website"
+        android:inputType="textUri" android:textSize="14sp"
+        android:imeOptions="actionNext|flagNoEnterAction" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip"
+        android:background="@android:drawable/editbox_background">
+      </EditText>
+    </TableRow>
+       <TableRow>
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:paddingRight="5dip"
+        android:paddingTop="10dip" android:paddingBottom="2dip"
+        android:paddingLeft="5dip" android:textStyle="bold" android:text="News Item Date :">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/newsItemDate" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="text" android:textSize="14sp" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip"
+        android:background="@android:drawable/editbox_background" />
+    </TableRow>
+    <TableRow>
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:paddingRight="5dip"
+        android:paddingTop="10dip" android:paddingBottom="2dip"
+        android:paddingLeft="5dip" android:textStyle="bold" android:text="Activate Date/Time :">
+      </TextView>
+    </TableRow>
+
+    <EditText android:id="@+id/startTime" android:layout_width="wrap_content"
+      android:layout_height="wrap_content" android:hint="Tap Here"
+      android:inputType="text" android:textSize="14sp" android:layout_weight="2"
+      android:paddingLeft="5dip" android:text="11:00 AM" android:paddingRight="5dip"
+      android:background="@android:drawable/editbox_background" />
+
+    <TableRow>
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:paddingRight="5dip"
+        android:paddingTop="10dip" android:paddingBottom="2dip"
+        android:paddingLeft="5dip" android:textStyle="bold" android:text="Expiry Date/Time :">
+      </TextView>
+    </TableRow>
+    <TableRow>
+      <EditText android:id="@+id/endTime" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:hint="Tap Here"
+        android:inputType="text" android:textSize="14sp" android:layout_weight="2"
+        android:paddingLeft="5dip" android:paddingRight="5dip" android:text="10:00 PM"
+        android:background="@android:drawable/editbox_background" />
+    </TableRow>
+  </TableLayout>
+   <include layout="@layout/colorstrip" />
+     <Button android:id="@+id/save" android:text="Save"
+      android:textSize="@dimen/menu_buttons_text_size" android:textColor="@color/menu_buttons"
+      android:textStyle="bold" android:gravity="center" android:layout_width="fill_parent"
+      android:layout_height="wrap_content" android:layout_marginLeft="15px"
+      android:layout_marginRight="15px" android:layout_marginTop="0px" 
+      android:background="@drawable/button_menu" />
+</LinearLayout>
+</ScrollView>
